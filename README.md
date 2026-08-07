@@ -3,9 +3,9 @@
 
 <h3>🗺️ Hoja de Ruta Profesional: De Cero a Senior.</h3>
 <h5>Módulo 1: Fundamentos de Dart y Runtime</h5>
-Sintaxis Moderna: Null Safety, Extension Methods, Records y Patterns (Dart 3+).
-Asincronía Avanzada: Event Loop, Microtasks, Future, Stream e Isolates para procesamiento pesado en hilos secundarios.
-Paradigma Orientado a Objetos: Mixins, Generics y Programación Funcional ligera.
+- Sintaxis Moderna: Null Safety, Extension Methods, Records y Patterns (Dart 3+).</br>
+- Asincronía Avanzada: Event Loop, Microtasks, Future, Stream e Isolates para procesamiento pesado en hilos secundarios.</br>
+- Paradigma Orientado a Objetos: Mixins, Generics y Programación Funcional ligera.</br>
 
 
 
