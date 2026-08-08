@@ -1,14 +1,48 @@
 # documentacionFlutter
 
 
-<h3>🗺️ Hoja de Ruta Profesional: De Cero a Senior.</h3>
-<h5>Módulo 1: Fundamentos de Dart y Runtime</h5>
-- Sintaxis Moderna: Null Safety, Extension Methods, Records y Patterns (Dart 3+).</br>
-- Asincronía Avanzada: Event Loop, Microtasks, Future, Stream e Isolates para procesamiento pesado en hilos secundarios.</br>
-- Paradigma Orientado a Objetos: Mixins, Generics y Programación Funcional ligera.</br>
+<h3>Material component widgets.</h3>
+
+<code> import 'package:flutter/material.dart'; </code>
+
+  Al importar esta libreria, tenemos acceso a las piezas de construcción esenciales de flutter. (Llamadas widgets).
+  - MaterialAPP : El widgets base que configura el tema, colores y navegacion de tu app.
+  - Scaffold: Estructura básica de pantalla ( Te da un espacio listo para la barra superior, cuerpo, botones flotantes).
+  - AppBar: La barra de titulo superior de la aplicación. 
+  - Text, container, Row, Column: Elementos de texto, cajas contenedoras, layouts de organización.
+  - StatelessWidget y statefulwidgets: Las clases base necesarias para crear cualquier componente propio.
+
+
+<h3>void main ()</h3
+
+
+  Indica al ordenador exactamente por dónde debe empezar a leer y ejecutar tu código.
+  - void : (Vacio) Especifica el tipo de datos que la funcion devuelve al sistema al terminar.
+  - main: Nombre obligatorio de la funcion.
+
+<code>void main() {
+    // El código empieza aquí
+    print("¡Hola, mundo!"); 
+    // El código termina aquí sin devolver nada.
+}</code>
+
+<h3>runApp</h3>
+
+Funcion de motor de arranque de la interfac gráfica de Flutter. Su único objetivo es tomar el widget 
+que le pases como argumento y dibujarlo en pantalla. va obligatorio dentro de la funcion void main();
+
+<code> void main() => runApp(const MiApp());</code>
+
+
+ <h3>StatelessWidget y StatefulWidget</h3>
+
+La diferencia principal es que un StatelessWidget es una foto fija (inmutable), mientras que 
+el widget que cambia en tiempo real —llamado StatefulWidget— es un elemento vivo que puede 
+reaccionar a las acciones del usuario actualizando su interfaz de forma dinámica.
+
+<h5>El superpoder del StatefulWidget: setState()</h5> El StatefulWidget se divide en dos clases internas en tu código: la estructura del widget y el objeto State (donde se guarda la memoria de lo que está pasando).Cuando modificas una variable dentro de la función setState(), le das un toque eléctrico a Flutter diciéndole: "Oye, el valor cambió, vuelve a dibujar esta parte de la pantalla ahora mismo".
 
 
 
-<h3>Módulo 2: Core de Flutter y Layout System</h3>
 
-Árbol de Rendimiento: La relación entre Widget, Element y RenderObject.Layout Mechanics: Regla fundamental: Constraints go down, Sizes go up, Parents set positions.Widgets Fundamentales: Layouts responsivos (Flex, LayoutBuilder, MediaQuery, CustomMultiChildLayout).Slivers y Listas Eficientes: Scrolling personalizado con CustomScrollView, SliverList y SliverGrid.🏢 Arquitectura y Gestión de Estado ProfesionalMódulo 3: Arquitectura Limpia (Clean Architecture)Separación por Capas: Domain, Data y Presentation.Principios SOLID aplicados a Flutter.  Inyección de Dependencias: Uso de get_it e injectable.Módulo 4: Gestión de Estado EnterpriseEstrategias Modernas: Dominio profundo de BLoC/Cubit (estándar enterprise) o Riverpod.Gestión de Side Effects: Inmutabilidad, manipulación de estados y reactividad sin re-renders innecesarios.📱 Especialización Android (Mobile Mastery)Integración Nativa: Uso de Platform Channels (MethodChannel, EventChannel) y migración moderna con Pigeon.Permisos y Ciclo de Vida: Manejo del ciclo de vida de la app (AppLifecycleListener) y permisos en Android 13+.Servicios en Segundo Plano: Push Notifications con Firebase (FCM) y WorkManager para tareas en background.Rendimiento: Optimización de APK/App Bundle (R8, ProGuard, splitting por ABI).🌐 Especialización Web (Web Native Mastery)Renderizado Web: Comprensión de CanvasKit, Skwasm (WebAssembly) y HTML Renderer.Diseño Responsivo vs Adaptativo:Responsivo: La UI se ajusta al tamaño de la pantalla.Adaptativo: La UI cambia de comportamiento (interacciones con ratón, teclado, hover, menús contextuales).Enrutamiento Avanzado: Manejo del historial del navegador, deep linking y URLs dinámicas con GoRouter (Router API / Navigator 2.0).SEO y Carga Inicial: Estrategias de diferimiento de paquetes (deferred loading), micro-frontends y optimización de assets.🛠️ Testing, CI/CD y DespliegueMódulo 5: Estrategia de TestingUnit Tests: Mocks y stubs (mockito, mocktail) para lógica de negocio.Widget/UI Tests: Pruebas de integración visual y bombeo de frames (WidgetTester).Integration Tests: Pruebas end-to-end en emuladores y navegadores reales.Módulo 6: DevOps y DespliegueCI/CD Pipelines: Automatización de builds y tests con GitHub Actions o Codemagic.Despliegue Android: Google Play Console, pistas internas, firmando AABs.Despliegue Web: Firebase Hosting, Vercel o AWS S3/CloudFront.
+
