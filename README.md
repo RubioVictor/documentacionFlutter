@@ -60,3 +60,18 @@ Para entenderlo de forma sencilla, imagínalo con una analogía del mundo real:
 - key : La key solo existe dentro del código de tu aplicación mientras esta se está ejecutando en el teléfono o en el simulador. Es una herramienta que Flutter crea y destruye en la memoria RAM cada vez que abres o cierras la app.
 
 <code>const MiApp({super.key});</code>
+
+
+<h4>Aprender para esta semana:</h4>
+
+<code>
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MenuSuperiorPage(),
+    );
+  }
+
+  // LLamada mas abajo a MenuSuperiorPage()
+</code>
