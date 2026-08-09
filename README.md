@@ -33,6 +33,7 @@ que le pases como argumento y dibujarlo en pantalla. va obligatorio dentro de la
 
 <code> void main() => runApp(const MiApp());</code>
 
+La línea runApp(const MiApp()); es la instrucción exacta que conecta tu código lógico con la pantalla del teléfono. Es el puente que transforma tus clases de Dart en una aplicación visual e interactiva.
 
  <h3>StatelessWidget y StatefulWidget</h3>
 
@@ -42,7 +43,14 @@ reaccionar a las acciones del usuario actualizando su interfaz de forma dinámic
 
 <h5>El superpoder del StatefulWidget: setState()</h5> El StatefulWidget se divide en dos clases internas en tu código: la estructura del widget y el objeto State (donde se guarda la memoria de lo que está pasando).Cuando modificas una variable dentro de la función setState(), le das un toque eléctrico a Flutter diciéndole: "Oye, el valor cambió, vuelve a dibujar esta parte de la pantalla ahora mismo".
 
+<h3>Extends (Herencia)</h3>
+La palabra clave se utiliza para indicar que una clase hereda (copia) las propiedades y comportamientos de una clase superior.
 
+El concepto de "Padre e Hijo" (Herencia)
+Para entenderlo de forma sencilla, imagínalo con una analogía del mundo real:
+- Clase Padre (Superclase): Persona (Sabe caminar, hablar y tiene un nombre).
+- Clase Hijo (Subclase): Futbolista extends Persona.
 
+<code>class MiApp extends StatelessWidget</code>
 
 
