@@ -53,4 +53,10 @@ Para entenderlo de forma sencilla, imagínalo con una analogía del mundo real:
 
 <code>class MiApp extends StatelessWidget</code>
 
+<h3>super.Key</h3>
 
+- super: En programación, la palabra super hace referencia directa al padre.Cuando tu clase MiApp se está creando, necesita configurarse. Al usar la palabra super, MiApp le dice a Flutter: "Oye, voy a agarrar este dato y se lo voy a pasar directamente a mi padre (StatelessWidget) para que él se encargue de procesarlo, porque yo no sé qué hacer con él".
+
+- key : La key solo existe dentro del código de tu aplicación mientras esta se está ejecutando en el teléfono o en el simulador. Es una herramienta que Flutter crea y destruye en la memoria RAM cada vez que abres o cierras la app.
+
+<code>const MiApp({super.key});</code>
