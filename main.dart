@@ -1,4 +1,4 @@
-<code>
+
 
 import 'package:flutter/material.dart'; //
 
@@ -46,7 +46,3 @@ class _HomeXploradoresState extends State<HomeXploradores> {
     );
   }
 }
-
-
-  
-</code>
